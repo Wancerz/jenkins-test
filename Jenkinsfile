@@ -5,11 +5,7 @@ pipeline {
         TAG = "latest"
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Wancerz/jenkins-test.git'
-            }
-        }
+
         stage('Build Docker Image') {
             steps {
                 script {
